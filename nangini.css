@@ -88,37 +88,54 @@ body {
    padding: 0px 10px 80px 10px;
 }
 
+/* --- Default (Desktop/Laptop) --- */
+.layout3 .toc-container {
+   display: flex;
+   flex-direction: row;   /* default: horizontal */
+   margin-left: 60px;
+}
+
+.layout3 .toc-container .chapterNum-side {
+   min-width: 20%;
+   max-width: 20%;
+   text-align: center;
+   border-right: 2px solid #fff;
+}
+
+/* --- Tablet (≤ 768px) --- */
 @media (max-width: 768px) {
    .layout3 .templateToc .color-container {
       padding: 50px;
    }
 }
 
+/* --- Tablet kecil / phablet (≤ 700px) --- */
 @media (max-width: 700px) {
-.layout3 .templateToc .color-container {
+   .layout3 .templateToc .color-container {
       padding: 50px 20px;
    }
-}
 
-.layout3 .toc-container .chapterNum-side {
-    text-align: left;
-    border-bottom: 2px solid #fff;
-    border-right: none;
-    margin-bottom: 30px;
-}
+   .layout3 .toc-container {
+      flex-direction: column; /* berubah jadi vertikal */
+      margin: 0;
+   }
 
-.layout3 .toc-container .chapter-info {
-    width: 100%;
-    padding: 0 0 80px;
-}
+   .layout3 .toc-container .chapterNum-side {
+      text-align: left;
+      border-bottom: 2px solid #fff;
+      border-right: none;
+      margin-bottom: 30px;
+   }
 
-@media (max-width: 500px) {
-.layout3 .toc-container .chapterNum-side {
-   max-width: 200px;
+   .layout3 .toc-container .chapter-info {
+      width: 100%;
+      padding: 0 0 80px;
    }
 }
 
-.layout3 .toc-container {
-    flex-direction: column;
-    margin: 0;
+/* --- HP kecil (≤ 500px) --- */
+@media (max-width: 500px) {
+   .layout3 .toc-container .chapterNum-side {
+      max-width: 200px;
+   }
 }
