@@ -1,7 +1,11 @@
+/* --- Reset & Global --- */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
 body {
    padding: 0;
    margin: 0;
-   box-sizing: border-box;
 }
 
 .layout3 .brown-bg * {
@@ -44,12 +48,12 @@ body {
    background-color: #8f84ce;
 }
 
-.color-container>* {
+.color-container > * {
    position: relative;
    z-index: 2;
 }
 
-.color-container .color-ocverlay {
+.color-container .color-overlay {
    position: absolute;
    width: 20%;
    height: 100%;
@@ -64,6 +68,7 @@ body {
 
 .layout3 .toc-container {
    display: flex;
+   flex-direction: row;   /* default: horizontal */
    margin-left: 60px;
 }
 
@@ -88,54 +93,36 @@ body {
    padding: 0px 10px 80px 10px;
 }
 
-/* --- Default (Desktop/Laptop) --- */
-.layout3 .toc-container {
-   display: flex;
-   flex-direction: row;   /* default: horizontal */
-   margin-left: 60px;
-}
-
-.layout3 .toc-container .chapterNum-side {
-   min-width: 20%;
-   max-width: 20%;
-   text-align: center;
-   border-right: 2px solid #fff;
-}
-
-/* --- Tablet (≤ 768px) --- */
+/* --- Tablet (≤768px) --- */
 @media (max-width: 768px) {
    .layout3 .templateToc .color-container {
       padding: 50px;
    }
-}
-
-/* --- Tablet kecil / phablet (≤ 700px) --- */
-@media (max-width: 700px) {
-   .layout3 .templateToc .color-container {
-      padding: 50px 20px;
-   }
-
    .layout3 .toc-container {
-      flex-direction: column; /* berubah jadi vertikal */
+      flex-direction: column; /* vertikal */
       margin: 0;
    }
-
    .layout3 .toc-container .chapterNum-side {
       text-align: left;
       border-bottom: 2px solid #fff;
       border-right: none;
       margin-bottom: 30px;
    }
-
    .layout3 .toc-container .chapter-info {
       width: 100%;
       padding: 0 0 80px;
    }
 }
 
-/* --- HP kecil (≤ 500px) --- */
-@media (max-width: 500px) {
-   .layout3 .toc-container .chapterNum-side {
-      max-width: 200px;
+/* --- Tablet kecil / phablet (≤700px) --- */
+@media (max-width: 700px) {
+   .layout3 .templateToc .color-container {
+      padding: 50px 20px;
    }
-}
+   .layout3 .toc-container {
+      flex-direction: column; /* tetap vertikal */
+      margin: 0;
+   }
+   .layout3 .toc-container .chapterNum-side {
+      text-align: left;
+      border-bottom
