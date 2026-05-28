@@ -1,0 +1,198 @@
+body {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box
+}
+
+.layout3 .brown-bg * {
+   color: #fff
+}
+
+.layout3 .green-bg * {
+   color: #fff
+}
+
+.layout3 .pink-bg * {
+   color: #f0e6fa
+}
+
+.color-container {
+   position: relative
+}
+
+.color-container.brown-bg {
+   background-color: #934e2e
+}
+
+.color-container.brown-bg .dark-brown {
+   background-color: #89472e
+}
+
+.color-container.green-bg {
+   background-color: #384733
+}
+
+.color-container.green-bg .dark-green {
+   background-color: #2d382a
+}
+
+.color-container.pink-bg {
+   background-color: #a59bdc
+}
+
+.color-container.pink-bg .dark-pink {
+   background-color: #8f84ce
+}
+
+.color-container>* {
+   position: relative;
+   z-index: 2;
+}
+
+.color-container .color-ocverlay {
+   position: absolute;
+   width: 20%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+.layout3 .templateToc .color-container {
+   padding: 50px 80px
+}
+
+.layout3 .toc-container {
+   display: flex;
+   margin-left: 60px
+}
+
+.layout3 .toc-container .chapterNum-side {
+   min-width: 20%;
+   max-width: 20%;
+   word-break: break-word;
+   text-align: center;
+   border-right: 2px solid #fff
+}
+
+
+
+@media (max-width: 768px) {
+   .layout3 .templateToc .color-container {
+      padding: 50px
+   }
+}
+
+
+
+
+@media (max-width: 700px) {
+.layout3 .templateToc .color-container {
+      padding: 50px 20px
+}
+
+.layout3 .toc-container {
+    flex-direction: column;
+    margin: 0
+}
+
+.layout3 .toc-container .chapterNum-side {
+    text-align: left;
+    border-bottom: 2px solid #fff;
+    border-right: none;
+    margin-bottom: 30px
+}
+
+.layout3 .toc-container .chapter-info {
+    width: 100%;
+    padding: 0 0 80px
+}
+}
+
+
+
+@media (max-width: 500px) {
+.layout3 .toc-container .chapterNum-side {
+   max-width: 200px
+   }
+}
+
+.layout3 .toc-container .chapterNum-side div strong {
+   font-size: 5em;
+   margin: 0;
+   line-height: 0.5; 
+   font-family: "BodoniFLF Bold";
+   color: #fff
+}
+
+.layout3 .toc-container .chapter-info {
+   width: 90%;
+   padding: 0px 10px 80px 10px
+}
+
+.layout3 .indo {
+   font-size: 1.05em;         /* Sedikit dinaikkan agar huruf Calibri lebih jelas di layar HP */
+   font-family: "Calibri", sans-serif;
+   margin: 0 0 15px 0;        /* Memberikan jarak (space) di bawah paragraf agar tidak menempel dengan paragraf berikutnya */
+   
+   /* --- KUNCI KENYAMANAN MEMBACA --- */
+   line-height: 1.65;         /* Jarak antar baris yang sangat ideal untuk orang tua (tidak terlalu renggang, tidak rapat) */
+   letter-spacing: 0.3px;     /* Memberikan sedikit napas antar huruf agar karakter tidak terlihat saling bertubrukan */
+}
+
+.layout3 .arab {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.7em;
+   margin: 0;
+   direction: rtl;        
+   text-align: right;     
+}
+
+.layout3 h1 {
+   font-size: 5em;
+   margin: 0;
+   font-family: "BodoniFLF Bold";
+   line-height: 1;
+}
+
+.layout3 h1:last-of-type {
+   margin-bottom: -20px
+}
+
+.layout3 h2 {
+   font-family: "Calibri", sans-serif;
+   font-size: 3.8em;
+   font-weight: normal !important;
+   margin: 0; /* Menghapus semua margin (atas, bawah, kanan, kiri) */
+   line-height: 0.8; /* Merapatkan ruang kosong vertikal akibat huruf yang besar */
+}
+
+.layout3 h3 {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.5em;
+   color: #FFFF00 !important;
+   font-weight: normal !important;
+   margin-top: 0;
+   margin-bottom: 30px; 
+   line-height: 0.8; 
+}
+
+.gambar-konten {
+    width: 30%;          /* Mengikuti lebar div teks (75%) atau sidebar (25%) */
+    max-width: 400px;     /* Batas maksimal lebar gambar agar tidak terlalu besar */
+    height: auto;         /* Tinggi otomatis agar gambar tidak gepeng */
+    border-radius: 10px;   /* Sudut sedikit melengkung agar terlihat kalem */
+    display: block;
+    margin: -50px auto;    /* Membuat gambar otomatis berada di tengah-tengah teks */
+    transform: translateX(110%);
+/* --- Efek Unik Kitab Tua --- */
+    filter: sepia(40%) contrast(95%) brightness(95%); 
+    box-shadow: -8px 8px 20px rgba(74, 49, 38, 0.15); /* Bayangan estetik warna cokelat tipis */
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+/* --- Efek Bingkai Mengambang --- */
+    padding: 6px;
+    background-color: #FCF6F2; /* Warna cerah teks Anda sebagai frame */
+    border: 1px solid #DBC7B8; /* Garis pembatas tipis yang kalem */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Efek timbul/mengambang */
+}
