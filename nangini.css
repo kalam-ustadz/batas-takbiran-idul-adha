@@ -1,47 +1,47 @@
 body {
    padding: 0;
    margin: 0;
-   box-sizing: border-box
+   box-sizing: border-box;
 }
 
 .layout3 .brown-bg * {
-   color: #fff
+   color: #fff;
 }
 
 .layout3 .green-bg * {
-   color: #fff
+   color: #fff;
 }
 
 .layout3 .pink-bg * {
-   color: #f0e6fa
+   color: #f0e6fa;
 }
 
 .color-container {
-   position: relative
+   position: relative;
 }
 
 .color-container.brown-bg {
-   background-color: #934e2e
+   background-color: #934e2e;
 }
 
 .color-container.brown-bg .dark-brown {
-   background-color: #89472e
+   background-color: #89472e;
 }
 
 .color-container.green-bg {
-   background-color: #384733
+   background-color: #384733;
 }
 
 .color-container.green-bg .dark-green {
-   background-color: #2d382a
+   background-color: #2d382a;
 }
 
 .color-container.pink-bg {
-   background-color: #a59bdc
+   background-color: #a59bdc;
 }
 
 .color-container.pink-bg .dark-pink {
-   background-color: #8f84ce
+   background-color: #8f84ce;
 }
 
 .color-container>* {
@@ -59,12 +59,12 @@ body {
 }
 
 .layout3 .templateToc .color-container {
-   padding: 50px 80px
+   padding: 50px 80px;
 }
 
 .layout3 .toc-container {
    display: flex;
-   margin-left: 60px
+   margin-left: 60px;
 }
 
 .layout3 .toc-container .chapterNum-side {
@@ -72,48 +72,7 @@ body {
    max-width: 20%;
    word-break: break-word;
    text-align: center;
-   border-right: 2px solid #fff
-}
-
-
-
-@media (max-width: 768px) {
-   .layout3 .templateToc .color-container {
-      padding: 50px
-   }
-}
-
-
-
-
-@media (max-width: 700px) {
-.layout3 .templateToc .color-container {
-      padding: 50px 30px
-}
-
-.layout3 .toc-container {
-    flex-direction: column;
-    margin: 0
-}
-
-.layout3 .toc-container .chapterNum-side {
-    text-align: left;
-    border-bottom: 2px solid #fff;
-    border-right: none;
-    margin-bottom: 30px
-}
-
-.layout3 .toc-container .chapter-info {
-    width: 100%;
-    padding: 0 0 80px
-}
-
-
-
-@media (max-width: 500px) {
-.layout3 .toc-container .chapterNum-side {
-   max-width: 200px
-   }
+   border-right: 2px solid #fff;
 }
 
 .layout3 .toc-container .chapterNum-side div strong {
@@ -121,22 +80,63 @@ body {
    margin: 0;
    line-height: 0.5; 
    font-family: "BodoniFLF Bold";
-   color: #fff
+   color: #fff;
 }
 
 .layout3 .toc-container .chapter-info {
    width: 90%;
-   padding: 0px 10px 80px 10px
+   padding: 0px 10px 80px 10px;
 }
 
+@media (max-width: 768px) {
+   .layout3 .templateToc .color-container {
+      padding: 50px;
+   }
+}
+
+
+@media (max-width: 700px) {
+.layout3 .templateToc .color-container {
+      padding: 50px 20px;
+   }
+}
+
+
+.layout3 .toc-container {
+    flex-direction: column;
+    margin: 0;
+}
+
+.layout3 .toc-container .chapterNum-side {
+    text-align: left;
+    border-bottom: 2px solid #fff;
+    border-right: none;
+    margin-bottom: 30px;
+}
+
+.layout3 .toc-container .chapter-info {
+    width: 100%;
+    padding: 0 0 80px;
+}
+
+
+
+@media (max-width: 500px) {
+.layout3 .toc-container .chapterNum-side {
+   max-width: 200px;
+   }
+}
+
+
+
 .layout3 .indo {
-   font-size: 1.05em;         /* Sedikit dinaikkan agar huruf Calibri lebih jelas di layar HP */
+   font-size: 1.05em;         
    font-family: "Calibri", sans-serif;
-   margin: 0 0 15px 0;        /* Memberikan jarak (space) di bawah paragraf agar tidak menempel dengan paragraf berikutnya */
+   margin: 0 0 15px 0;        
    
    /* --- KUNCI KENYAMANAN MEMBACA --- */
-   line-height: 1.65;         /* Jarak antar baris yang sangat ideal untuk orang tua (tidak terlalu renggang, tidak rapat) */
-   letter-spacing: 0.3px;     /* Memberikan sedikit napas antar huruf agar karakter tidak terlihat saling bertubrukan */
+   line-height: 1.65;         
+   letter-spacing: 0.3px;     
 }
 
 .layout3 .arab {
@@ -155,7 +155,7 @@ body {
 }
 
 .layout3 h1:last-of-type {
-   margin-bottom: -20px
+   margin-bottom: -20px;
 }
 
 .layout3 h2 {
