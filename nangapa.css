@@ -69,13 +69,13 @@ body {
    margin-left: 60px;
 }
 
-.layout3 .toc-container .chapterNum-side {
-   min-width: 20%;
-   max-width: 20%;
-   word-break: break-word;
-   text-align: center;
-   border-right: 2px solid #fff;
-}
+   .layout3 .toc-container .chapterNum-side {
+      max-width: 200px;
+      text-align: center;
+      border-right: 2px solid #fff;
+      border-bottom: none;
+      margin-bottom: 0;
+   }
 
 .layout3 .toc-container .chapterNum-side div strong {
    font-size: 5em;
@@ -85,10 +85,10 @@ body {
    color: #fff;
 }
 
-.layout3 .toc-container .chapter-info {
-   width: 90%;
-   padding: 0px 10px 80px 10px;
-}
+   .layout3 .toc-container .chapter-info {
+      width: auto;
+      padding: 0 10px 80px 10px;
+   }
 
 
 @media (max-width: 768px) {
