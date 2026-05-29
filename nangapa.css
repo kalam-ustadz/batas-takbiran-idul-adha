@@ -65,7 +65,7 @@ body {
 
 .layout3 .toc-container {
    display: flex;
-   flex-direction: column;   /* default: horizontal */
+   flex-direction: row;   /* default: horizontal */
    margin-left: 60px;
 }
 
