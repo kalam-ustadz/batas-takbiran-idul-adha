@@ -125,4 +125,93 @@ body {
    }
    .layout3 .toc-container .chapterNum-side {
       text-align: left;
-      border-bottom
+      border-bottom: 2px solid #fff;
+      border-right: none;
+      margin-bottom: 30px;
+   }
+   .layout3 .toc-container .chapter-info {
+      width: 100%;
+      padding: 0 0 80px;
+   }
+}
+
+/* --- HP kecil (≤500px) --- */
+@media (max-width: 500px) {
+   .layout3 .toc-container {
+      flex-direction: row; /* kembali horizontal */
+   }
+   .layout3 .toc-container .chapterNum-side {
+      max-width: 200px;
+      text-align: center;
+      border-right: 2px solid #fff;
+      border-bottom: none;
+      margin-bottom: 0;
+   }
+   .layout3 .toc-container .chapter-info {
+      width: auto;
+      padding: 0 10px 80px 10px;
+   }
+}
+
+/* --- Typography --- */
+.layout3 .indo {
+   font-size: 1.05em;         
+   font-family: "Calibri", sans-serif;
+   margin: 0 0 15px 0;        
+   line-height: 1.65;         
+   letter-spacing: 0.3px;     
+}
+
+.layout3 .arab {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.7em;
+   margin: 0;
+   direction: rtl;        
+   text-align: right;     
+}
+
+.layout3 h1 {
+   font-size: 5em;
+   margin: 0;
+   font-family: "BodoniFLF Bold";
+   line-height: 1;
+}
+
+.layout3 h1:last-of-type {
+   margin-bottom: -20px;
+}
+
+.layout3 h2 {
+   font-family: "Calibri", sans-serif;
+   font-size: 3.8em;
+   font-weight: normal !important;
+   margin: 0;
+   line-height: 0.8;
+}
+
+.layout3 h3 {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.5em;
+   color: #FFFF00 !important;
+   font-weight: normal !important;
+   margin-top: 0;
+   margin-bottom: 30px; 
+   line-height: 0.8; 
+}
+
+/* --- Image styling --- */
+.gambar-konten {
+   width: 30%;
+   max-width: 400px;
+   height: auto;
+   border-radius: 10px;
+   display: block;
+   margin: -50px auto;
+   transform: translateX(110%);
+   filter: sepia(40%) contrast(95%) brightness(95%); 
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s ease;
+   padding: 6px;
+   background-color: #FCF6F2;
+   border: 1px solid #DBC7B8;
+}
