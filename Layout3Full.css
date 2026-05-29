@@ -1,68 +1,68 @@
 .ktemplateLang-ar.layout3 .toc-container {
    margin-left: auto;
-   margin-right: 60px
+   margin-right: 60px;
 }
 
 .ktemplateLang-ar.layout3 .toc-container .chapterNum-side {
    border-right: none;
-   border-left: 2px solid #fff
+   border-left: 2px solid #fff;
 }
 
 @media (max-width: 700px) {
    .ktemplateLang-ar.layout3 .toc-container .chapterNum-side {
-      border-left: none
+      border-left: none;
    }
 }
 
 .ktemplateLang-ar.layout3 .toc-container .chapter-info {
-   padding: 0 60px 80px 20px
+   padding: 0 60px 80px 20px;
 }
 
 .ktemplateLang-ar.layout3 ul li::before,
 .ktemplateLang-ar.layout3 ol li::before {
    margin-left: 8px;
-   margin-right: auto
+   margin-right: auto;
 }
 
 .ktemplateLang-ar .color-container .color-ocverlay {
    left: auto;
-   right: 0
+   right: 0;
 }
 
 body {
    padding: 0;
    margin: 0;
-   box-sizing: border-box
+   box-sizing: border-box;
 }
 
 .myGrid {
    display: flex;
-   justify-content: space-between
+   justify-content: space-between;
 }
 
 .myGrid.two-diffSides .left-col {
    width: 64%;
-   word-break: break-word
+   word-break: break-word;
 }
 
 .myGrid.two-diffSides .right-col {
    width: 34%;
-   word-break: break-word
+   word-break: break-word;
 }
 
 .myGrid.two-reverseDiffSides .left-col {
    width: 35%;
-   word-break: break-word
+   word-break: break-word;
 }
 
 .myGrid.two-reverseDiffSides .right-col {
    width: 65%;
-   word-break: break-word
+   word-break: break-word;
 }
 
 .myGrid.equal-cols .left-col {
    width: 48%;
-   word-break: break-word
+   word-break: break-word;
 }
 
 .myGrid.equal-cols .right-col {
@@ -72,12 +72,12 @@ body {
 }
 
 .layout3 .templateToc .color-container {
-   padding: 50px 80px
+   padding: 50px 80px;
 }
 
 .layout3 .toc-container {
    display: flex;
-   margin-left: 60px
+   margin-left: 60px;
 }
 
 .layout3 .toc-container .chapterNum-side {
@@ -85,12 +85,12 @@ body {
    max-width: 20%;
    word-break: break-word;
    text-align: center;
-   border-right: 2px solid #fff
+   border-right: 2px solid #fff;
 }
 
 @media (max-width: 500px) {
    .layout3 .toc-container .chapterNum-side {
-      max-width: 200px
+      max-width: 200px;
    }
 }
 
@@ -98,18 +98,18 @@ body {
    font-size: 5em;
    margin: 0;
    font-family: "BodoniFLF Bold";
-   color: #fff
+   color: #fff;
 }
 
 .layout3 .toc-container .chapter-info {
    width: 80%;
-   padding: 0 20px 80px 60px
+   padding: 0 20px 80px 60px;
 }
 
 .layout3 h1 {
    font-size: 5em;
    margin: 0;
-   font-family: "BodoniFLF Bold"
+   font-family: "calibri";
 }
 
 .layout3 h1:last-of-type {
@@ -119,27 +119,27 @@ body {
 .layout3 h2 {
    font-size: 3.8em;
    margin: 0;
-   font-family: "BodoniFLF Bold"
+   font-family: "BodoniFLF Bold";
 }
 
 .layout3 ul,
 .layout3 ol {
    list-style: none;
    padding: 0;
-   margin: 0
+   margin: 0;
 }
 
 .layout3 ul li,
 .layout3 ol li {
    font-size: 1.75em;
-   font-family: "Proxima Nova Light"
+   font-family: "Proxima Nova Light";
 }
 
 .layout3 ul li::before,
 .layout3 ol li::before {
    content: "-";
    display: inline-block;
-   margin-right: 8px
+   margin-right: 8px;
 }
 
 .layout3 ul li span,
@@ -148,34 +148,34 @@ body {
 }
 
 .layout3 .brown-bg * {
-   color: #fff
+   color: #fff;
 }
 
 
 .layout3 h2 {
    font-size: 3.8em;
    margin: 0;
-   font-family: "BodoniFLF Bold"
+   font-family: "BodoniFLF Bold";
 }
 
 .layout3 ul,
 .layout3 ol {
    list-style: none;
    padding: 0;
-   margin: 0
+   margin: 0;
 }
 
 .layout3 ul li,
 .layout3 ol li {
    font-size: 1.75em;
-   font-family: "Proxima Nova Light"
+   font-family: "Proxima Nova Light";
 }
 
 .layout3 ul li::before,
 .layout3 ol li::before {
    content: "-";
    display: inline-block;
-   margin-right: 8px
+   margin-right: 8px;
 }
 
 .layout3 ul li span,
@@ -184,7 +184,7 @@ body {
 }
 
 .layout3 .brown-bg * {
-   color: #fff
+   color: #fff;
 }
 
 h1,
@@ -193,65 +193,65 @@ h3,
 h4,
 h5,
 h6 {
-   font-family: "Big Caslon Medium"
+   font-family: "Big Caslon Medium";
 }
 
 p {
    font-family: "Proxima Nova Light";
    font-size: 1.3em;
-   color: #333
+   color: #333;
 }
 
 a {
-   color: #333
+   color: #333;
 }
 
 img {
-   max-width: 1005
+   max-width: 1005;
 }
 
 div {
-   font-family: "Proxima Nova Light"
+   font-family: "Proxima Nova Light";
 }
 
 @media (max-width: 768px) {
    .layout3 .templateToc .color-container {
-      padding: 50px
+      padding: 50px;
    }
 }
 
 @media (max-width: 700px) {
    .layout3 .templateToc .color-container {
-      padding: 50px 30px
+      padding: 50px 30px;
    }
 
    .layout3 .toc-container {
       flex-direction: column;
-      margin: 0
+      margin: 0;
    }
 
    .layout3 .toc-container .chapterNum-side {
       text-align: left;
       border-bottom: 2px solid #fff;
       border-right: none;
-      margin-bottom: 31px
+      margin-bottom: 31px;
    }
 
    .layout3 .toc-container .chapter-info {
       width: 100%;
-      padding: 0 0 80px
+      padding: 0 0 80px;
    }
 }
 
 @media (max-width: 1024px) {
    .myGrid {
       flex-direction: column;
-      align-items: center
+      align-items: center;
    }
 
    .myGrid.two-diffSides .left-col {
-      width: 100% !important;
-      margin-bottom: 20px
+      width: 100% !important
+      margin-bottom: 20px;
    }
 
    .myGrid.two-diffSides .right-col {
@@ -259,8 +259,8 @@ div {
    }
 
    .myGrid.two-reverseDiffSides .left-col {
-      width: 100% !important;
-      margin-bottom: 20px
+      width: 100% !important
+      margin-bottom: 20px;
    }
 
    .myGrid.two-reverseDiffSides .right-col {
@@ -268,11 +268,11 @@ div {
    }
 
    .myGrid.equal-cols .left-col {
-      width: 100%
+      width: 100%;
    }
 
    .myGrid.equal-cols .right-col {
-      width: 100%
+      width: 100%;
    }
 }
 
