@@ -4,8 +4,10 @@
 }
 
 body {
-   padding: 0;
-   margin: 0;
+   font-size: 18px;              /* ukuran dasar lebih besar */
+   line-height: 1.8;             /* spasi antarbaris lebih lega */
+   color: #222;                  /* warna teks lebih gelap untuk kontras */
+   background-color: #fafafa;    /* latar belakang lembut */
 }
 
 .layout3 .brown-bg * {
@@ -151,52 +153,53 @@ body {
       width: auto;
       padding: 0 10px 80px 10px;
    }
+      body {
+      font-size: 20px;           /* tambah ukuran font di HP kecil */
+   }
+   .layout3 .indo {
+      font-size: 1.3em;
+   }
+   .layout3 .arab {
+      font-size: 2.2em;
+   }
 }
 
 /* --- Typography --- */
 .layout3 .indo {
-   font-size: 1.05em;         
+   font-size: 1.2em;             /* sedikit lebih besar */
    font-family: "Calibri", sans-serif;
-   margin: 0 0 15px 0;        
-   line-height: 1.65;         
-   letter-spacing: 0.3px;     
+   line-height: 1.8;             /* spasi antarbaris lebih longgar */
+   letter-spacing: 0.5px;        /* jarak antarhuruf lebih jelas */
+   margin: 0 0 20px 0;
 }
 
+/* --- Bahasa Arab --- */
 .layout3 .arab {
-   font-family: "Calibri", sans-serif;
-   font-size: 1.7em;
-   margin: 0;
-   direction: rtl;        
-   text-align: right;     
+   font-family: "Scheherazade New", "Calibri", sans-serif; /* font Arab yang lebih jelas */
+   font-size: 2em;               /* lebih besar agar mudah dibaca */
+   line-height: 2;               /* spasi antarbaris longgar */
+   margin: 0 0 20px 0;
+   direction: rtl;
+   text-align: right;
+}
+
+/* --- Heading --- */
+.layout3 h1, .layout3 h2, .layout3 h3 {
+   margin-bottom: 20px;
+   line-height: 1.2;             /* jangan terlalu rapat */
 }
 
 .layout3 h1 {
-   font-size: 5em;
-   margin: 0;
-   font-family: "BodoniFLF Bold";
-   line-height: 1;
-}
-
-.layout3 h1:last-of-type {
-   margin-bottom: -20px;
+   font-size: 3em;               /* turunkan sedikit agar tidak terlalu besar di HP */
 }
 
 .layout3 h2 {
-   font-family: "Calibri", sans-serif;
-   font-size: 3.8em;
-   font-weight: normal !important;
-   margin: 0;
-   line-height: 0.8;
+   font-size: 2.2em;
 }
 
 .layout3 h3 {
-   font-family: "Calibri", sans-serif;
-   font-size: 1.5em;
-   color: #FFFF00 !important;
-   font-weight: normal !important;
-   margin-top: 0;
-   margin-bottom: 30px; 
-   line-height: 0.8; 
+   font-size: 1.6em;
+   color: #333 !important;       /* warna lebih gelap, hindari kuning yang silau */
 }
 
 /* --- Image styling --- */
