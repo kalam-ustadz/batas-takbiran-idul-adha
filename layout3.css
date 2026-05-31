@@ -1,0 +1,231 @@
+body {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box
+}
+
+main {
+  background-color: #934E2E;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+section {
+  padding: 2rem;
+  height: 50vh;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+section > * {
+  max-width: 600px
+}
+
+section.hero {
+  position: relative;
+  background-color: #1a1a1a;
+  background-color: #272727;
+  background-repeat: no-repeat; /* 1. Tambahkan ini agar gambar tidak mengulang (tidak menjadi tile) */
+  background-size: cover;       /* 2. Ubah ini agar gambar menutup seluruh area section secara proporsional */ 
+  background-position: top center;  /* 3. Atur posisi awal gambar di tengah (opsional, bagus untuk background-size: cover) */
+  background-size: 120% auto;   /* 4. Asalnya tilling pengulangan : auto 5rem */
+  background-image: url("https://kalam-ustadz.github.io/batas-takbiran-idul-adha/logo.png");
+  animation: parallax 3s linear;
+  animation: parallax linear;
+  animation-timeline: scroll(); 
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  animation: float linear;
+  animation-timeline: view(-100px); <!-- jarak aman (inset) kapan animasi mulai dipicu saat elemen masuk ke area layar (viewport) -->
+}
+
+.info-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  animation: float2 linear;
+  animation-timeline: view(-100px); <!-- jarak aman (inset) kapan animasi mulai dipicu saat elemen masuk ke area layar (viewport) -->
+}
+
+.hero-content > * {
+  position: relative;
+}
+
+@keyframes parallax {       /* bisa pakai bottom 0% center ke bottom 100% center. asalnya: bottom 0px center ke bottom -400px center */
+  from { background-position: top 20% center; }
+  to {background-position: top 300% center; }
+}
+
+@keyframes float {
+  0% { top: 1%; }
+  95% { top: 30%; } <!-- Ketika pengguna baru mulai melihat section ini (0%), konten teks dipaksa berada agak di atas (top: 5%) -->
+}
+
+@keyframes float2 {
+  0% { top: 90%; }
+  120% { top: 5%; } <!-- Ketika pengguna baru mulai melihat section ini (0%), konten teks dipaksa berada agak di atas (top: 5%) -->
+}
+
+.layout3 .templateToc .color-container {
+   padding: 50px 80px
+}
+
+.layout3 .toc-container {
+   display: flex;
+   margin-left: 60px
+}
+
+.layout3 .toc-container .chapterNum-side {
+   min-width: 20%;
+   max-width: 20%;
+   word-break: break-word;
+   text-align: center;
+   border-right: 2px solid #fff
+}
+
+.layout3 .brown-bg * {
+   color: #fff
+}
+
+.color-container.brown-bg {
+background: #934E2E;
+background: linear-gradient(90deg, rgba(147, 78, 46, 1) 0%, rgba(166, 74, 31, 1) 71%, rgba(147, 78, 46, 1) 100%);}
+
+
+
+.color-container.brown-bg .dark-brown {
+   background: #934E2E;
+   background: linear-gradient(180deg, rgba(147, 78, 46, 0.33) 0%, rgba(166, 74, 31, 1) 90%);
+}
+
+@media (max-width: 500px) {
+   .layout3 .toc-container .chapterNum-side {
+      max-width: 200px
+   }
+}
+
+.layout3 .toc-container .chapterNum-side div strong {
+   font-size: 5em;
+   margin: 0;
+   font-family: "BodoniFLF Bold";
+   color: #fff
+}
+
+.layout3 .toc-container .chapter-info {
+   width: 80%;
+   padding: 0 20px 80px 60px
+}
+
+.color-container>* {
+   position: relative;
+   z-index: 2;
+}
+
+.color-container .color-overlay {
+   position: absolute;
+   width: 20%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+
+.layout3 h1 {
+   font-size: 5em;
+   margin: 0;
+   font-family: "arial narrow";
+   line-height: 1;
+}
+
+.layout3 h2 {
+   font-size: 3.8em;
+   margin: 0;
+   font-family: "arial narrow";
+   line-height: 0.8;
+   margin-top: 0px;
+   margin-bottom: -10px; 
+}
+
+.layout3 h3 {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.5em;
+   color: #fff !important;
+   font-weight: normal !important;
+   margin-top: 0px;
+   margin-bottom: 30px; 
+   line-height: 1; 
+}
+
+h4,
+h5,
+h6 {
+   font-family: "arial"
+}
+
+p {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.3em;
+   margin: 0 0 15px 0;
+   color: #333
+   line-height: 1.65;
+   letter-spacing: 0.3px;
+}
+
+a {
+   color: #333
+}
+
+img {
+   max-width: 1005
+}
+
+div {
+   font-family: "calibri"
+}
+
+.layout3 .arab {
+   font-family: "Calibri", sans-serif;
+   font-size: 1.7em;
+   margin: 0;
+   direction: rtl;        
+   text-align: right;     
+}
+
+@media (max-width: 768px) {
+   .layout3 .templateToc .color-container {
+      padding: 50px
+   }
+}
+
+@media (max-width: 700px) {
+   .layout3 .templateToc .color-container {
+      padding: 50px 30px
+   }
+
+   .layout3 .toc-container {
+      flex-direction: column;
+      margin: 0
+   }
+
+   .layout3 .toc-container .chapterNum-side {
+      text-align: left;
+      border-bottom: 2px solid #fff;
+      border-right: none;
+      margin-bottom: 31px
+   }
+
+   .layout3 .toc-container .chapter-info {
+      width: 100%;
+      padding: 0 0 80px
+   }
+}
+
